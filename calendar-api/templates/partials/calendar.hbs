@@ -1,0 +1,17 @@
+<div>
+  <h2>{{months.current.month}} {{months.current.year}}</h2>
+  <table>
+    <tr>
+      {{#each titles.table}}
+      <th>{{this}}</th>
+      {{/each}}
+    </tr>
+    {{#each weeks}}
+    <tr>
+      {{#each this.week}}
+      {{dateStyle this.day this.bold this.today}}
+      {{/each}}
+    </tr>
+    {{/each}}
+  </table>
+</div>

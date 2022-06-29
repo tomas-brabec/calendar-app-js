@@ -1,0 +1,14 @@
+<div>
+  <table>
+    <tr>
+      {{#each titles.menu}}
+      <th>{{capitalizeFirstLetter this}}</th>
+      {{/each}}
+    </tr>
+    <tr>
+      {{#each months}}
+      <td>{{link this.month this.year}}</td>
+      {{/each}}
+    </tr>
+  </table>
+</div>
